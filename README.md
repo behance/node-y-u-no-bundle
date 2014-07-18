@@ -17,3 +17,9 @@ findDriversNotBundled(jsRoot, requireConfig, function(stragglers) {
   });
 });
 ```
+
+Or via the shell:
+
+```
+why-you-no-bundle my/js/root my/build/config.json
+```

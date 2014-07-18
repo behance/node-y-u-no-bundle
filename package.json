@@ -1,6 +1,6 @@
 {
   "name": "why-you-no-bundle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get the names of driver scripts that aren't actually being built",
   "main": "index.js",
   "scripts": {

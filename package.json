@@ -1,0 +1,31 @@
+{
+  "name": "why-you-no-bundle",
+  "version": "0.0.0",
+  "description": "Get the names of driver scripts that aren't actually being built",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "why-you-no-bundle": "bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mrjoelkemp/node-why-you-no-bundle.git"
+  },
+  "keywords": [
+    "AMD",
+    "requirejs",
+    "modules"
+  ],
+  "author": "Joel Kemp <joel@mrjoelkemp.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrjoelkemp/node-why-you-no-bundle/issues"
+  },
+  "homepage": "https://github.com/mrjoelkemp/node-why-you-no-bundle",
+  "dependencies": {
+    "amd-driver-scripts": "^0.1.0",
+    "get-modules-to-build": "^1.0.0"
+  }
+}

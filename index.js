@@ -1,5 +1,5 @@
-var getModuleNames = require('get-modules-to-build'),
-    getDriverScripts = require('amd-driver-scripts');
+var getModuleNames = require('get-modules-to-build');
+var getDriverScripts = require('amd-driver-scripts');
 
 /**
  * Computes the set difference between two arrays
@@ -28,18 +28,19 @@ module.exports = function(root, config, cb) {
   if (!config) {
     throw new Error('config not given');
   }
+
   var moduleNames = getModuleNames(config);
 
   getDriverScripts(root, function(drivers) {
     var strippedDriverScripts = drivers.map(function(scriptName) {
-      var tokens = scriptName.split(root);
-      return tokens[1].replace('.js', '') || scriptName;
+      var token = scriptName
+                  .replace(new RegExp(root + '\/?'), '')
+                  .replace('.js', '');
+      return token || scriptName;
     });
 
     var notBundled = difference(strippedDriverScripts, moduleNames);
 
-    if(cb) cb(notBundled);
+    if (cb) { cb(notBundled); }
   });
 };
-
-

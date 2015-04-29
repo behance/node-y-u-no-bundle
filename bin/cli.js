@@ -2,9 +2,9 @@
 
 'use strict';
 
-var findNotBundled = require('../'),
-    root = process.argv[2],
-    config = process.argv[3];
+var findNotBundled = require('../');
+var root = process.argv[2];
+var config = process.argv[3];
 
 try {
   var stragglers = findNotBundled(root, config, function(stragglers) {

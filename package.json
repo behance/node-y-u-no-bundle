@@ -4,7 +4,7 @@
   "description": "Get the names of driver scripts that aren't actually being built",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jscs -p google bin index.js"
   },
   "bin": {
     "why-you-no-bundle": "bin/cli.js"
@@ -27,5 +27,8 @@
   "dependencies": {
     "amd-driver-scripts": "^0.1.0",
     "get-modules-to-build": "^1.0.0"
+  },
+  "devDependencies": {
+    "jscs": "~1.13.0"
   }
 }

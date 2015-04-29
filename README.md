@@ -1,13 +1,13 @@
-### Why you no bundle?
+### y u no bundle? [![npm](http://img.shields.io/npm/v/y-u-no-bundle.svg)](https://npmjs.org/package/y-u-no-bundle) [![npm](http://img.shields.io/npm/dm/y-u-no-bundle.svg)](https://npmjs.org/package/y-u-no-bundle)
 
-> Get a list of driver scripts in your codebase that aren't actually being built
+> Get a list of driver scripts in your codebase that aren't actually being built/bundled
 
-`npm install -g why-you-no-bundle`
+`npm install -g y-u-no-bundle`
 
 ### Usage
 
 ```js
-var findDriversNotBundled = require('why-you-no-bundle');
+var findDriversNotBundled = require('y-u-no-bundle');
 var jsRoot = 'path/to/my/javascripts/';
 var requireConfig = '/path/to/my/requirejs/build/config/config.json';
 
@@ -21,5 +21,5 @@ findDriversNotBundled(jsRoot, requireConfig, function(stragglers) {
 Or via the shell:
 
 ```
-why-you-no-bundle my/js/root my/build/config.json
+y-u-no-bundle my/js/root my/build/config.json
 ```

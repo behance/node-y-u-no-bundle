@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/mrjoelkemp/node-y-u-no-bundle",
   "dependencies": {
-    "amd-driver-scripts": "^0.1.0",
+    "amd-driver-scripts": "^1.0.0",
     "get-modules-to-build": "^1.0.0"
   },
   "devDependencies": {
